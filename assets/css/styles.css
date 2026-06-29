@@ -122,7 +122,7 @@ h2.title { font-size: clamp(2rem, 4.4vw, 3.1rem); }
 }
 .nav .container { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
 .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 800; }
-.nav-logo img { height: 30px; }
+.nav-logo img { height: 46px; width: auto; }
 .nav-links { display: flex; align-items: center; gap: 8px; }
 .nav-links a.link {
   padding: 8px 14px; border-radius: 999px; color: var(--text-muted); font-weight: 600; font-size: .95rem;
@@ -237,6 +237,15 @@ html[dir="rtl"] .phone-tilt { transform: perspective(1400px) rotateY(12deg) rota
 .gallery .phone { width: 248px; }
 .shot figcaption { text-align: center; margin-top: 16px; font-weight: 700; color: var(--text); }
 .shot figcaption span { display: block; font-weight: 500; color: var(--text-muted); font-size: .92rem; margin-top: 2px; }
+
+/* Framed App Store "canvas" tiles (self-contained: bg + caption baked in) */
+.canvas-shot { scroll-snap-align: center; flex: none; }
+.canvas-shot img {
+  height: clamp(420px, 64vh, 600px); width: auto; display: block;
+  border-radius: 30px; box-shadow: var(--shadow-lg);
+  transition: transform .25s ease;
+}
+.canvas-shot img:hover { transform: translateY(-6px); }
 
 /* ----- Subscription / plans --------------------------------------------- */
 .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
