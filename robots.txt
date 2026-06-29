@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://groupy-web.erezults.com/sitemap.xml

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://groupy-web.erezults.com/</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://groupy-web.erezults.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://groupy-web.erezults.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://groupy-web.erezults.com/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://groupy-web.erezults.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://groupy-web.erezults.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://groupy-web.erezults.com/en/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://groupy-web.erezults.com/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://groupy-web.erezults.com/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://groupy-web.erezults.com/en/faq.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://groupy-web.erezults.com/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://groupy-web.erezults.com/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://groupy-web.erezults.com/en/faq.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://groupy-web.erezults.com/privacy.html</loc>
+    <priority>0.3</priority>
+  </url>
+</urlset>

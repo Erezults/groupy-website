@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Groupy Calendar — יומן משותף לקבוצות, למשפחה ולחברים</title>
+  <meta name="description" content="Groupy הוא יומן משותף פשוט וברור לכל קבוצה — משפחה, חוג או קהילה. אירוע אחד נראה לכולם, עם אישורי הגעה, תזכורות חכמות, יצירת אירועים ב-AI ומעקב תשלומים. לאייפון, אייפד ומק." />
+  <meta name="theme-color" content="#0c0e1a" />
+  <link rel="canonical" href="https://groupy-web.erezults.com/" />
+  <link rel="alternate" hreflang="he" href="https://groupy-web.erezults.com/" />
+  <link rel="alternate" hreflang="en" href="https://groupy-web.erezults.com/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://groupy-web.erezults.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Groupy Calendar" />
+  <meta property="og:title" content="Groupy Calendar — יומן משותף לקבוצות" />
+  <meta property="og:description" content="כל התוכניות של כולם, ביומן אחד. אירועים, אישורי הגעה, תזכורות, AI ומעקב תשלומים — לאייפון, אייפד ומק." />
+  <meta property="og:image" content="https://groupy-web.erezults.com/assets/img/og.png" />
+  <meta property="og:url" content="https://groupy-web.erezults.com/" />
+  <meta property="og:locale" content="he_IL" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+<script>document.documentElement.classList.remove('no-js');</script>
+
+<!-- ===== Nav ===== -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a class="nav-logo" href="/" aria-label="Groupy Calendar">
+      <img src="/assets/img/groupy-wordmark.png" alt="Groupy" />
+    </a>
+    <nav class="nav-links" aria-label="ניווט ראשי">
+      <a class="link" href="#features">תכונות</a>
+      <a class="link" href="#ai">AI</a>
+      <a class="link" href="#subscription">מנוי</a>
+      <a class="link" href="/faq.html">שאלות נפוצות</a>
+    </nav>
+    <div class="nav-right">
+      <a class="lang-toggle" href="/en/" hreflang="en" aria-label="Switch to English">EN</a>
+      <a class="btn btn-primary nav-cta desk-cta" href="https://apps.apple.com/app/id6779937306" target="_blank" rel="noopener">הורדה</a>
+      <button class="nav-burger" aria-label="תפריט" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <img class="hero-wordmark" src="/assets/img/groupy-wordmark.png" alt="Groupy" />
+      <h1>כל התוכניות של כולם — <span class="gradient-text">ביומן אחד</span></h1>
+      <p class="sub">יומן משותף אחד לכל מה שחברים ומשפחה מתכננים יחד — אירועים, אישורי הגעה, תזכורות חכמות ומעקב תשלומים. הכול במקום אחד, בלי הודעות שמתפזרות בקבוצות הוואטסאפ.</p>
+      <div class="hero-actions">
+        <a class="appstore-badge" href="https://apps.apple.com/app/id6779937306" target="_blank" rel="noopener" aria-label="הורידו מ-App Store">
+          <img src="/assets/img/appstore-badge-he.svg" alt="הורידו מ-App Store" width="180" height="54" />
+        </a>
+        <a class="btn btn-ghost on-dark" href="#features">צפו בתכונות</a>
+      </div>
+      <ul class="hero-badges">
+        <li class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg> עברית ואנגלית מלאה (RTL)</li>
+        <li class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg> אייפון · אייפד · מק</li>
+        <li class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg> עובד גם ללא חיבור לרשת</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="phone phone-tilt">
+        <img src="/assets/img/screens/he/calendar.png" alt="מסך היומן של Groupy" loading="eager" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Features ===== -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">תכונות</span>
+      <h2 class="title">כל מה שצריך כדי לתאם — בלי בלגן</h2>
+      <p class="lead">הוסיפו אירוע פעם אחת, וכל חברי הקבוצה רואים אותו מיד. כל אחד יכול לאשר הגעה, להגיב ולקבל תזכורת בדיוק בזמן.</p>
+    </div>
+    <div class="features-grid">
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></svg></div>
+        <h3>יומן קבוצתי משותף</h3>
+        <p>אירוע אחד נראה לכל חברי הקבוצה, עם צבע משלו לכל חבר — כך תמיד ברור מה של מי.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H5.2L4 17.2V4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <h3>אישור הגעה ותגובות</h3>
+        <p>RSVP ושיחה תחת כל אירוע — כולם יודעים מי מגיע ומה קורה, בלי שרשורים אינסופיים.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+        <h3>אירועים חוזרים</h3>
+        <p>יומי, שבועי, חודשי או שנתי — הגדירו פעם אחת והאירוע יחזור מעצמו.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div>
+        <h3>תזכורות והתראות Push</h3>
+        <p>שלחו תזכורת לחבר מסוים או לכל הקבוצה — בדיוק בזמן הנכון, אוטומטית.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v14H7l-4 4V3z"/><path d="M8 8h8M8 12h6"/></svg></div>
+        <h3>סיכומים חכמים</h3>
+        <p>דייג'סט יומי ושבועי וסיכום תגובות — בשעה שנוחה לכם, ישר להתראות.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="6"/><rect x="12" y="7" width="3" height="10"/><rect x="17" y="9" width="3" height="8"/></svg></div>
+        <h3>מעקב תשלומים</h3>
+        <p>דו״ח חודשי אינטראקטיבי: סמנו בלחיצה מי שילם ומי עוד חייב — בלי גיליונות אקסל.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg></div>
+        <h3>ווידג'טים למסך הבית</h3>
+        <p>"היום" ו"חודש" בשלושה גדלים, עם צבעי החברים — האירועים הקרובים תמיד מול העיניים.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10v10H4V10"/><path d="M2 7h20v3H2z"/><path d="M12 22V7M12 7S9 2 6.5 4 9 7 12 7zM12 7s3-5 5.5-3S15 7 12 7z"/></svg></div>
+        <h3>ימי הולדת</h3>
+        <p>לוח ימי הולדת שנתי עם תזכורות — לעולם לא תשכחו אף אחד מהקבוצה.</p>
+      </article>
+      <article class="feature-card reveal">
+        <div class="feature-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></div>
+        <h3>ריבוי קבוצות וייצוא</h3>
+        <p>נהלו כמה קבוצות ועברו ביניהן בקלות, וייצאו את היומן לקובץ ‎.ics‎ בכל רגע.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI spotlight ===== -->
+<section class="section spotlight" id="ai">
+  <div class="container">
+    <div class="split">
+      <div class="split-copy">
+        <span class="eyebrow">חדש · בינה מלאכותית</span>
+        <h2 class="title">הפכו טקסט, תמונה או קול<br/>לאירוע — אוטומטית</h2>
+        <p>כתבו משפט פשוט כמו "מיכל במשחק כדורגל במגרש הביתי ב-20:00", צלמו הזמנה, או פשוט הקליטו את עצמכם — וה-AI של Groupy ימלא עבורכם את כל פרטי האירוע: תאריך, שעה, חברים וכותרת.</p>
+        <ul class="feature-list on-dark">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> טקסט חופשי → אירוע מלא בלחיצה</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> צילום הזמנה או צילום מסך</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> הקלטה קולית בעברית או באנגלית</li>
+        </ul>
+      </div>
+      <div class="split-media">
+        <div class="phone"><img src="/assets/img/screens/he/ai.png" alt="יצירת אירוע עם AI ב-Groupy" loading="lazy" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Payments spotlight ===== -->
+<section class="section" id="payments">
+  <div class="container">
+    <div class="split reverse">
+      <div class="split-media">
+        <div class="phone"><img src="/assets/img/screens/he/report.png" alt="דו״ח תשלומים חודשי ב-Groupy" loading="lazy" /></div>
+      </div>
+      <div class="split-copy" dir="rtl">
+        <span class="eyebrow">מעקב תשלומים</span>
+        <h2 class="title">מי שילם ומי עוד חייב — ברור לחלוטין</h2>
+        <p>מושלם לכל פעילות שכרוכה בעלויות: חוגים, קייטנות, קבוצות אימון או ועד בית. הדו״ח החודשי האינטראקטיבי מראה בדיוק מי שילם ומי עדיין חייב — סמנו תשלום בלחיצה אחת, בלי גיליונות וטבלאות.</p>
+        <ul class="feature-list">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> עלות לכל אירוע ולכל חבר</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> סימון "שולם" בלחיצה</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> סיכום חודשי לכל הקבוצה</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Screens gallery ===== -->
+<section class="section" style="background:var(--surface-2)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">מבט מבפנים</span>
+      <h2 class="title">יפה, בהיר וכהה — בעברית ובאנגלית</h2>
+    </div>
+  </div>
+  <div class="gallery reveal" role="list" aria-label="צילומי מסך">
+    <figure class="shot" role="listitem"><div class="phone"><img src="/assets/img/screens/he/calendar.png" alt="יומן חודשי" loading="lazy"/></div><figcaption>יומן חודשי<span>צבע לכל חבר</span></figcaption></figure>
+    <figure class="shot" role="listitem"><div class="phone"><img src="/assets/img/screens/he/day.png" alt="תצוגת יום" loading="lazy"/></div><figcaption>תצוגת יום<span>כל פרטי האירוע</span></figcaption></figure>
+    <figure class="shot" role="listitem"><div class="phone"><img src="/assets/img/screens/he/ai.png" alt="יצירה עם AI" loading="lazy"/></div><figcaption>יצירה עם AI<span>טקסט · תמונה · קול</span></figcaption></figure>
+    <figure class="shot" role="listitem"><div class="phone"><img src="/assets/img/screens/he/report.png" alt="דו״ח תשלומים" loading="lazy"/></div><figcaption>דו״ח תשלומים<span>מי שילם ומי חייב</span></figcaption></figure>
+    <figure class="shot" role="listitem"><div class="phone"><img src="/assets/img/screens/he/birthday.png" alt="ימי הולדת" loading="lazy"/></div><figcaption>ימי הולדת<span>לא לשכוח אף אחד</span></figcaption></figure>
+    <figure class="shot" role="listitem"><div class="phone"><img src="/assets/img/screens/he/dark.png" alt="מצב כהה" loading="lazy"/></div><figcaption>מצב כהה<span>נעים לעיניים</span></figcaption></figure>
+  </div>
+</section>
+
+<!-- ===== Subscription ===== -->
+<section class="section" id="subscription">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Groupy Premium</span>
+      <h2 class="title">התחילו בקלות, שדרגו כשתרצו</h2>
+      <p class="lead">התוכנית הבסיסית מאפשרת להתחיל מיד. פרימיום פותח חברים ללא הגבלה, יכולות AI, ריבוי קבוצות ועוד — לכל הקבוצות שלכם.</p>
+    </div>
+    <div class="plans">
+      <!-- Basic -->
+      <article class="plan reveal">
+        <h3>בסיסי</h3>
+        <p class="plan-tagline">מושלם להתחלה — הכירו את Groupy.</p>
+        <ul>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> קבוצה אחת · עד 2 חברים</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> יומן משותף וסנכרון מלא</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> טעימת AI חודשית</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://apps.apple.com/app/id6779937306" target="_blank" rel="noopener">התחילו עכשיו</a>
+      </article>
+      <!-- Premium -->
+      <article class="plan featured reveal">
+        <span class="tag">הכי פופולרי</span>
+        <h3>פרימיום</h3>
+        <p class="plan-tagline">כל מה שהמשפחה צריכה — במקום אחד, בלי הגבלות.</p>
+        <ul>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> חברים ללא הגבלה בקבוצה</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> עד 50 חברים עם הרשאות כתיבה ויכולות AI</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> חברי קריאה ללא הגבלה</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> יצירת אירועים מטקסט, תמונה וקול</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> ריבוי קבוצות ללא הגבלה</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> דוחות חכמים לכל הקבוצה</li>
+        </ul>
+        <a class="btn btn-primary" href="https://apps.apple.com/app/id6779937306" target="_blank" rel="noopener">שדרגו ל-Premium</a>
+      </article>
+      <!-- Lifetime -->
+      <article class="plan lifetime reveal">
+        <span class="tag">מבצע מייסדים</span>
+        <h3>לכל החיים</h3>
+        <p class="plan-tagline">שלמו פעם אחת — Premium שלכם. כל היכולות, ללא מנוי חודשי.</p>
+        <ul>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> כל יכולות הפרימיום</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> רכישה חד-פעמית, ללא חידוש</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span> מבצע מייסדים מוגבל בזמן</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://apps.apple.com/app/id6779937306" target="_blank" rel="noopener">צפו במבצע</a>
+      </article>
+    </div>
+    <p class="plan-note">המחירים והתוכניות המלאות מוצגים באפליקציה ב-App Store. המנוי מתחדש אוטומטית עד לביטולו, וניתן לנהל או לבטל בכל עת דרך ההגדרות. <a href="/faq.html" style="color:var(--accent);font-weight:600">שאלות נפוצות ←</a></p>
+  </div>
+</section>
+
+<!-- ===== CTA band ===== -->
+<section class="section cta-band">
+  <div class="container">
+    <h2>מוכנים לתאם בלי בלגן?</h2>
+    <p>הורידו את Groupy והתחילו לתאם אירועים עם המשפחה, החברים או הקהילה — הכול במקום אחד.</p>
+    <div class="cta-actions">
+      <a class="appstore-badge" href="https://apps.apple.com/app/id6779937306" target="_blank" rel="noopener" aria-label="הורידו מ-App Store">
+        <img src="/assets/img/appstore-badge-he.svg" alt="הורידו מ-App Store" width="180" height="54" />
+      </a>
+      <a class="btn btn-ghost on-dark" href="/faq.html">שאלות נפוצות</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="/assets/img/groupy-wordmark.png" alt="Groupy" />
+      <p>יומן משותף פשוט וברור לכל קבוצה — משפחה, חוג או קהילה. לאייפון, אייפד ומק.</p>
+    </div>
+    <div>
+      <h4>מוצר</h4>
+      <a href="#features">תכונות</a><br/>
+      <a href="#ai">יצירה עם AI</a><br/>
+      <a href="#subscription">מנוי Premium</a><br/>
+      <a href="https://apps.apple.com/app/id6779937306" target="_blank" rel="noopener">הורידו מ-App Store</a>
+    </div>
+    <div>
+      <h4>תמיכה</h4>
+      <a href="/faq.html">שאלות נפוצות</a><br/>
+      <a href="mailto:erezults@gmail.com">צרו קשר</a><br/>
+      <a href="/privacy.html">מדיניות פרטיות</a><br/>
+      <a href="/en/" hreflang="en">English</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2026 Erez Cohen · Groupy Calendar</span>
+      <span class="ez"><img src="/assets/img/erezults-logo.png" alt="Erezults" /></span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Groupy Calendar",
+  "operatingSystem": "iOS, iPadOS, macOS",
+  "applicationCategory": "ProductivityApplication",
+  "url": "https://groupy-web.erezults.com/",
+  "image": "https://groupy-web.erezults.com/assets/img/og.png",
+  "inLanguage": ["he", "en"],
+  "description": "יומן משותף פשוט וברור לכל קבוצה — משפחה, חוג או קהילה. אירוע אחד נראה לכולם, עם אישורי הגעה, תזכורות, יצירת אירועים ב-AI ומעקב תשלומים.",
+  "author": { "@type": "Organization", "name": "E-REZULTS", "email": "erezults@gmail.com" },
+  "downloadUrl": "https://apps.apple.com/app/id6779937306"
+}
+</script>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
