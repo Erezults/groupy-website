@@ -20,9 +20,12 @@ if [ -n "${MIRROR_DIR:-}" ]; then
   MIRROR="$MIRROR_DIR"
 else
   MIRROR=""
+  # The local checkout of Erezults/GroupyNative is named GroupyNative_New;
+  # plain GroupyNative is an older checkout without website/.
   for candidate in \
+    "$REPO_ROOT/../GroupyNative_New/website" \
     "$REPO_ROOT/../GroupyNative/website" \
-    "$REPO_ROOT/../../GroupyNative/website" \
+    "$HOME/GitSync/GroupyNative_New/website" \
     "$HOME/GitSync/GroupyNative/website"; do
     if [ -d "$candidate" ]; then
       MIRROR=$(cd "$candidate" && pwd)
@@ -44,10 +47,12 @@ echo
 DRIFT=0
 
 # Compare every file tracked by this repo against the mirror.
-# CNAME and README.md are repo-specific (Pages config / repo docs), not app copy.
+# Deployment/repo-specific files are excluded on both sides: CNAME + .nojekyll
+# (GitHub Pages, only here), vercel.json (Vercel, only in the mirror),
+# README.md / scripts/ / .gitignore (repo docs & tooling).
 for f in $(git -C "$REPO_ROOT" ls-files); do
   case "$f" in
-    CNAME|README.md|scripts/*|.gitignore) continue ;;
+    CNAME|.nojekyll|vercel.json|README.md|scripts/*|.gitignore) continue ;;
   esac
   if [ ! -f "$MIRROR/$f" ]; then
     echo "MISSING in mirror: $f"
@@ -61,7 +66,7 @@ done
 # Files that exist only in the mirror (added in the app repo, not synced here).
 (cd "$MIRROR" && find . -type f ! -name '.DS_Store' | sed 's|^\./||') | while read -r f; do
   case "$f" in
-    CNAME|README.md|scripts/*|.gitignore) continue ;;
+    CNAME|.nojekyll|vercel.json|README.md|scripts/*|.gitignore) continue ;;
   esac
   if [ ! -f "$REPO_ROOT/$f" ]; then
     echo "MISSING here:      $f"

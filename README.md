@@ -44,10 +44,12 @@ applied in **both** places or the copies drift.
 
 When app features or subscription copy change:
 1. Edit the pages here (landing + FAQ + privacy, **both** Hebrew and English).
-2. Apply the identical change to `GroupyNative/website/`.
-3. Verify: `./scripts/check-mirror.sh` — compares this repo against the local
-   `GroupyNative/website/` checkout (or `MIRROR_DIR=<path>` to point at it) and
-   lists missing/differing files. Exit 0 = in sync.
+2. Apply the identical change to `website/` in the app repo (local checkout:
+   `~/GitSync/GroupyNative_New/`).
+3. Verify: `./scripts/check-mirror.sh` — auto-locates the local checkout (or
+   `MIRROR_DIR=<path>` to point at it) and lists missing/differing files.
+   Exit 0 = in sync.
 
-Repo-specific files (`CNAME`, `README.md`, `scripts/`) are excluded from the
-comparison — they intentionally exist only here.
+Deployment/repo-specific files are excluded from the comparison: `CNAME` and
+`.nojekyll` (GitHub Pages, only here), `vercel.json` (Vercel, only in the
+mirror), `README.md` and `scripts/`.
