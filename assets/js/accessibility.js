@@ -21,11 +21,17 @@
   var MIN_SCALE = 0.85, MAX_SCALE = 1.4, STEP = 0.1;
 
   function loadState() {
+    var s = { scale: 1, contrast: false, noMotion: false };
     try {
-      var raw = localStorage.getItem(STORE_KEY);
-      if (raw) return JSON.parse(raw);
+      var p = JSON.parse(localStorage.getItem(STORE_KEY) || "null");
+      if (p) {
+        var n = parseFloat(p.scale);
+        if (isFinite(n)) s.scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, n));
+        s.contrast = !!p.contrast;
+        s.noMotion = !!p.noMotion;
+      }
     } catch (e) {}
-    return { scale: 1, contrast: false, noMotion: false };
+    return s;
   }
   function saveState(state) {
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {}
@@ -45,10 +51,10 @@
   var widget = document.createElement("div");
   widget.className = "a11y-widget";
   widget.innerHTML =
-    '<button type="button" class="a11y-toggle" aria-haspopup="true" aria-expanded="false" aria-label="' + t.label + '">' +
-    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="4.5" r="2"/><path d="M4 8.5l8 2 8-2M12 10.5v5m-4 6 4-6 4 6"/></svg>' +
+    '<button type="button" class="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel" aria-label="' + t.label + '">' +
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M4 8.5l8 2 8-2M12 10.5v5m-4 6 4-6 4 6"/></svg>' +
     "</button>" +
-    '<div class="a11y-panel" role="menu">' +
+    '<div class="a11y-panel" id="a11y-panel" role="group" aria-label="' + t.label + '">' +
     '<button type="button" data-action="bigger">' + t.bigger + "</button>" +
     '<button type="button" data-action="smaller">' + t.smaller + "</button>" +
     '<button type="button" data-action="contrast" aria-pressed="false">' + t.contrast + "</button>" +
