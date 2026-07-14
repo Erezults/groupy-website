@@ -23,6 +23,7 @@
   --accent-strong: #7c3aed;   /* AI purple */
   --gold-1: #e8b84b;
   --gold-2: #c9962e;
+  --gold-text: #8a611f;  /* darker gold for text on white — #c9962e is 2.66:1, fails AA */
 
   /* Neutrals */
   --ink:        #0c0e1a;      /* deep indigo-black (hero / footer) */
@@ -262,7 +263,7 @@ html[dir="rtl"] .phone-tilt { transform: perspective(1400px) rotateY(12deg) rota
 .plan h3 { font-size: 1.4rem; margin-bottom: 6px; }
 .plan .plan-tagline { color: var(--text-muted); margin-bottom: 18px; min-height: 44px; }
 .plan .price-note { font-weight: 700; color: var(--accent); margin-bottom: 20px; font-size: .96rem; }
-.plan.lifetime .price-note { color: var(--gold-2); }
+.plan.lifetime .price-note { color: var(--gold-text); }
 .plan ul { display: grid; gap: 12px; margin-bottom: 26px; }
 .plan li { display: flex; align-items: flex-start; gap: 11px; color: var(--text); font-size: .98rem; }
 .plan li .check { flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center;
