@@ -38,4 +38,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://groupy-web.erezults.com/en/privacy.html"/>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://groupy-web.erezults.com/accessibility.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://groupy-web.erezults.com/accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://groupy-web.erezults.com/en/accessibility.html"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://groupy-web.erezults.com/en/accessibility.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://groupy-web.erezults.com/accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://groupy-web.erezults.com/en/accessibility.html"/>
+    <priority>0.3</priority>
+  </url>
 </urlset>
