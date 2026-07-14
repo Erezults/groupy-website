@@ -46,8 +46,9 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content" data-i18n="skip">דלגו לתוכן</a>
   <div class="lang-switch"><button id="langBtn" type="button">English</button></div>
-  <main class="auth-card">
+  <main class="auth-card" id="main-content" tabindex="-1">
     <img class="mark" src="/assets/img/groupy-wordmark.png" alt="Groupy" />
 
     <!-- ✅ Email verified (signup / email-change / classic verify redirect) -->
@@ -127,6 +128,7 @@
         err_sub: 'קישור האימות פג תוקף או כבר נוצל. פתחו את Groupy ובקשו אימייל חדש.',
         e_short: 'הסיסמה חייבת לפחות ' + MIN_PW + ' תווים',
         e_match: 'הסיסמאות אינן תואמות', e_busy: 'מעדכן…', e_fail: 'העדכון נכשל. בקשו קישור איפוס חדש.',
+        skip: 'דלגו לתוכן',
         lang: '🇺🇸 English', badge: '/assets/img/appstore-badge-he.svg'
       },
       en: {
@@ -141,6 +143,7 @@
         err_sub: 'The verification link expired or was already used. Open Groupy and request a new email.',
         e_short: 'Password must be at least ' + MIN_PW + ' characters',
         e_match: 'Passwords do not match', e_busy: 'Updating…', e_fail: 'Update failed. Request a new reset link.',
+        skip: 'Skip to content',
         lang: '🇮🇱 עברית', badge: '/assets/img/appstore-badge-en.svg'
       }
     };
@@ -225,5 +228,6 @@
     }
   })();
   </script>
+  <script src="/assets/js/accessibility.js" defer></script>
 </body>
 </html>

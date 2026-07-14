@@ -36,8 +36,9 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main-content" data-i18n="skip">Skip to content</a>
   <div class="lang-switch"><button id="langBtn" type="button">🇮🇱 עברית</button></div>
-  <main class="join-card">
+  <main class="join-card" id="main-content" tabindex="-1">
     <img class="mark" src="/assets/img/groupy-wordmark.png" alt="Groupy" />
     <div style="font-size:44px;margin-bottom:14px">👨‍👩‍👧‍👦</div>
     <h1 data-i18n="title">You're invited!</h1>
@@ -77,12 +78,14 @@
         title: "You're invited!", sub: 'Join', sub2: 'on Groupy — the shared calendar for groups, family & friends.',
         copy: 'Copy code', copied: 'Copied ✓', open: 'Open Groupy & join',
         hint: 'No app yet? Download Groupy, then tap the button above — or enter the code on the join screen.',
+        skip: 'Skip to content',
         lang: '🇮🇱 עברית', dir: 'ltr', l: 'en', badge: '/assets/img/appstore-badge-en.svg'
       },
       he: {
         title: 'הוזמנת להצטרף!', sub: 'הצטרפו אל', sub2: 'ב-Groupy — היומן המשותף לקבוצות, למשפחה ולחברים.',
         copy: 'העתקת קוד', copied: 'הועתק ✓', open: 'פתחו את Groupy והצטרפו',
         hint: 'עדיין אין אפליקציה? הורידו את Groupy ולחצו על הכפתור למעלה — או הזינו את הקוד במסך ההצטרפות.',
+        skip: 'דלגו לתוכן',
         lang: '🇺🇸 English', dir: 'rtl', l: 'he', badge: '/assets/img/appstore-badge-he.svg'
       }
     };
@@ -112,5 +115,6 @@
     });
   })();
   </script>
+  <script src="/assets/js/accessibility.js" defer></script>
 </body>
 </html>
